@@ -10,4 +10,9 @@ public class KitchenObject : MonoBehaviour
     {
         return kitchenObjectSO;
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log(collision.gameObject.name);
+    }
 }
